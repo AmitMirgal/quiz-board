@@ -1,0 +1,21 @@
+$dark-red: #632b2e;
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1.2px solid $dark-red;	
+    height: 40px;
+    width: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0 4px;
+    margin: 4px 12px;
+    outline: 0;
+    
+    &:hover, &:focus{
+        background-color:#d1888c;
+        color:$dark-red;
+        border: 2px solid $dark-red;
+    }
+}

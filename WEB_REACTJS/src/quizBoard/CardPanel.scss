@@ -1,0 +1,38 @@
+$dark-green: #1f752b;
+$lighter-green: #9dd8a5;
+
+$dark-red: #940e0e;
+$lighter-red: #be8080;
+
+$line-width: 1.2px;
+
+.card-panel{
+    display: flex;
+    flex-direction: row;
+    padding: 3px;
+    border: 3px;
+    margin: 12px;
+    flex-wrap: wrap;
+
+    .green-cards{
+        border:$line-width solid $dark-green;	
+    
+        &:hover, &:focus{
+            background-color:$lighter-green;
+            color:$dark-green;
+            border: 2px solid $dark-green;
+            outline: 0;
+        }
+    }
+
+    .red-cards{
+        border:$line-width solid $dark-red;	
+    
+        &:hover, &:focus{
+            background-color:$lighter-red;
+            color:$dark-red;
+            border: 2px solid $dark-red;
+            outline: 0;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@import '../../../commons/styles/colors.scss';
+
+.borderButton{
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 4px 4px;
+    margin: 4px 4px;
+    background-color: white; 
+    color: black; 
+    border: 2px solid $primary;
+    color: $primary;
+    border-radius: 8px;
+    outline: 0;
+    font-weight: bold;
+
+    &:hover, &:focus{
+        background-color:#a4cee9;
+    }
+
+    &:disabled{
+        background-color:$disabled-color;
+        border: 1px solid $disabled-color;
+        color: rgb(151, 147, 147);
+        cursor: default;
+    }
+}

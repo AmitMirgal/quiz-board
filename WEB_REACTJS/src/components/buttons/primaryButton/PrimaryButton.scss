@@ -1,0 +1,32 @@
+@import '../../../commons/styles/colors.scss';
+
+.filledButton{
+    width: 120px;
+    height: 50px;
+    background-color:$primary; 
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 4px 4px;
+    margin: 4px 4px;
+    border-radius: 8px;
+    outline: 0;
+    color: white;
+    font-weight: bold;
+
+    &:hover, &:focus{
+        background-color:#a4cee9;
+        color:$primary;
+        border: 2px solid $primary;
+    }
+
+    &:disabled{
+        background-color:$disabled-color;
+        border: 1px solid disabled-color;
+        color: rgb(112, 109, 109);
+        cursor: default;
+    }
+}

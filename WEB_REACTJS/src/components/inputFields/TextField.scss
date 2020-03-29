@@ -1,0 +1,23 @@
+.input-container{
+
+    padding:8px 0;
+    
+    .textField{
+        border:0;
+        border:1px solid #ddd;  
+        background:transparent;
+        height: 30px;
+        width: 100%;
+        padding:8px 8px;
+        font-size:16px;
+        text-align: end;
+        border-radius: 8px;
+    }
+
+    .textField:focus{ 
+        border:none;	
+        outline:none;
+        border:1px solid #555;	
+    }
+
+}
